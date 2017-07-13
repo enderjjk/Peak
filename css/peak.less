@@ -7,6 +7,9 @@
 @red:#e84851;
 @background-color:#858b9c;
 
+@button--bgcolor--preview: @yellow;
+@button--bgcolor--publish: @red;
+
 body, button{
 	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
@@ -86,13 +89,13 @@ body {
 		margin-left:1em; 
 	}
 	&.button--preview{
-		background:@yellow;
+		background:@button--bgcolor--preview;
 		&:hover{
 			background: darken(@yellow,10%);
 		}
 	}
 	&.button--publish{
-		background:@red;
+		background:@button--bgcolor--publish;
 		&:hover{
 			background: darken(@red,10%);
 		}

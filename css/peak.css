@@ -1,0 +1,119 @@
+@import url("reset.css") screen;
+@import url("unsemantic-grid-responsive.css") screen;
+@import url("font-awesome.css") screen;
+@import url("font-awesome-ie7.css") screen;
+@import url("font-awesome-ie7.css") screen;
+
+body,
+button {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+body {
+  font-size: 0.75em;
+  /* =12px */
+}
+.header {
+  min-height: 6em;
+  background: #858b9c;
+}
+.header .section--header .section--header--title {
+  line-height: 6em;
+}
+.header .section--header .section--header--title h1 {
+  font-size: 2.5em;
+  float: left;
+  color: #fff;
+  font-weight: 600;
+}
+.header .section--header .section--header--title span {
+  float: left;
+  position: absolute;
+  margin-top: -1em;
+  color: #e6ad00;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header .section--navigation {
+  float: left;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  line-height: 2em;
+}
+.header .section--navigation .navigation--item {
+  border-left: 1px solid #fff;
+  font-size: 1.25em;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 1em;
+  border-bottom: 2px solid #858b9c;
+}
+.header .section--navigation .navigation--item:hover,
+.header .section--navigation .navigation--item:focus {
+  border-bottom: 2px solid #fff;
+}
+.header .section--navigation .navigation--item:first-of-type {
+  border-left: 0;
+}
+.button {
+  padding: 0.75em;
+  margin: 1em 0;
+  border-radius: 0.25em;
+  font-size: 1.25em;
+  -moz-border-radius: 0.25em;
+  border: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button.button--float--right {
+  float: right;
+}
+.button.button--float--left {
+  float: left;
+}
+.button.button--margin--right {
+  margin-right: 1em;
+}
+.button.button--margin--left {
+  margin-left: 1em;
+}
+.button.button--preview {
+  background: #ffc000;
+}
+.button.button--preview:hover {
+  background: #cc9a00;
+}
+.button.button--publish {
+  background: #e84851;
+}
+.button.button--publish:hover {
+  background: #e11c27;
+}
+.button.button--previous-page {
+  padding: 0;
+  margin: 0;
+  height: 2em;
+  background: none;
+  font-size: 3em;
+  color: #fff;
+}
+.button.button--previous-page:hover {
+  color: #e6e6e6;
+}
+/*media query*/
+@media screen and (max-width: 1000px){
+	body{
+		font-size: 0.6em;
+	}	
+	.header .section--navigation .navigation--item{ font-size:1.5em; }
+}
+@media screen and (max-width: 940px){	
+	.header .section--navigation .navigation--item{ font-size:1.3em; }
+	.header .section--header .section--header--title h1{
+		font-size:2.25em;
+	}
+}

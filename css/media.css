@@ -1,12 +1,12 @@
 @media screen and (max-width: 1000px){
 	body{
-		font-size: 0.6em;
+		font-size: 0.6em!important;
 	}	
-	.header a.navigation--item{ font-size:1.5em!important; }
+	.header .section--navigation .navigation--item{ font-size:1.5em!important; }
 }
 @media screen and (max-width: 940px){	
-	.header a.navigation--item{ font-size:1.3em!important; }
-	.header--section--title h1{
+	.header .section--navigation .navigation--item{ font-size:1.3em!important; }
+	.header .section--header .section--header--title h1{
 		font-size:2.25em!important;
 	}
 }
