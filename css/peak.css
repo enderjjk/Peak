@@ -2,8 +2,6 @@
 @import url("unsemantic-grid-responsive.css") screen;
 @import url("font-awesome.css") screen;
 @import url("font-awesome-ie7.css") screen;
-@import url("font-awesome-ie7.css") screen;
-
 body,
 button {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -16,16 +14,16 @@ body {
   min-height: 6em;
   background: #858b9c;
 }
-.header .section--header .section--header--title {
+.section--header--title {
   line-height: 6em;
 }
-.header .section--header .section--header--title h1 {
+.section--header--title__content {
   font-size: 2.5em;
   float: left;
   color: #fff;
   font-weight: 600;
 }
-.header .section--header .section--header--title span {
+.section--header--title__state {
   float: left;
   position: absolute;
   margin-top: -1em;
@@ -34,13 +32,13 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
-.header .section--navigation {
+.section--navigation {
   float: left;
   padding-top: 2em;
   padding-bottom: 2em;
   line-height: 2em;
 }
-.header .section--navigation .navigation--item {
+.navigation__item {
   border-left: 1px solid #fff;
   font-size: 1.25em;
   float: left;
@@ -50,11 +48,11 @@ body {
   padding: 0 1em;
   border-bottom: 2px solid #858b9c;
 }
-.header .section--navigation .navigation--item:hover,
-.header .section--navigation .navigation--item:focus {
+.navigation__item:hover,
+.navigation__item:focus {
   border-bottom: 2px solid #fff;
 }
-.header .section--navigation .navigation--item:first-of-type {
+.navigation__item:first-of-type {
   border-left: 0;
 }
 .button {
@@ -69,31 +67,31 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.button.button--float--right {
+.button--float-right {
   float: right;
 }
-.button.button--float--left {
+.button--float-left {
   float: left;
 }
-.button.button--margin--right {
+.button--margin-right {
   margin-right: 1em;
 }
-.button.button--margin--left {
+.button--margin-left {
   margin-left: 1em;
 }
-.button.button--preview {
+.button--preview {
   background: #ffc000;
 }
-.button.button--preview:hover {
+.button--preview:hover {
   background: #cc9a00;
 }
-.button.button--publish {
+.button--publish {
   background: #e84851;
 }
-.button.button--publish:hover {
+.button--publish:hover {
   background: #e11c27;
 }
-.button.button--previous-page {
+.button--previous-page {
   padding: 0;
   margin: 0;
   height: 2em;
@@ -101,9 +99,10 @@ body {
   font-size: 3em;
   color: #fff;
 }
-.button.button--previous-page:hover {
+.button--previous-page:hover {
   color: #e6e6e6;
 }
+
 /*media query*/
 @media screen and (max-width: 1000px){
 	body{
