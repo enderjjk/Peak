@@ -1,0 +1,95 @@
+@import url("reset.css") screen;
+@import url("unsemantic-grid-responsive.css") screen;
+@import url("font-awesome.css") screen;
+@import url("font-awesome-ie7.css") screen;
+
+@yellow:#ffc000;
+@red:#e84851;
+body{
+	font-size:62.5%; /* =10px */
+	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
+header{
+	min-height:6em;
+	background:#858b9c;
+	section{
+		&.title{
+			line-height:6em;	
+			& h1{
+				font-size:2.5em;
+				float:left;
+				color:#fff;
+				font-weight:600;
+				
+			}
+			& span{
+				float: left;
+				position: relative;
+				margin-top: -1em;
+				color: darken(@yellow,5%);
+				font-size: 1em;
+				text-transform: uppercase;
+				font-weight:600;
+			}
+		}
+	}
+	& ul{
+		float:left;
+		padding:2em;
+		line-height:2em;
+		& li{
+			float:left;
+			border-left:1px solid #fff;
+			& a{ 
+				float:left;
+				text-align:center;
+				text-decoration:none;
+				color:#fff; 
+				font-size:1.25em;
+				padding:0 1em;
+				border-bottom:2px solid #858b9c;
+				&:hover, &:focus{
+					border-bottom:2px solid #fff;
+				}
+			}
+			&:first-of-type{
+				border-left:0;
+			}
+		}
+	}
+}
+button{
+	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	padding:0.75em;
+	border-radius:0.25em;
+	-moz-border-radius:0.25em;
+	border:0;
+	color:#fff;
+	font-weight:600;
+	height:3em;
+	cursor:pointer;
+	margin:0.75em 0;
+	&.preview{
+		background:@yellow;
+		&:hover{
+			background: darken(@yellow,10%);
+		}
+	}
+	&.publish{
+		background:@red;
+		&:hover{
+			background: darken(@red,10%);
+		}
+	}
+	&.pre-page{
+		padding:0;
+		margin:0;
+		height:2em;
+		background:none;
+		font-size:3em;
+		color:#fff;
+		&:hover{color: darken(#fff,10%); }
+	}
+	
+}
