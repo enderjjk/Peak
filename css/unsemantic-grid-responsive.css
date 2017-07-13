@@ -1,9 +1,9 @@
 /* ============================================ */
 /* This file has a mobile-to-desktop breakpoint */
 /* ============================================ */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 767px) {
   @-ms-viewport {
-    width: 560px;
+    width: 767px;
 }
 }
 @media screen {
